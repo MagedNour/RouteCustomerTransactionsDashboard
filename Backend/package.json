@@ -4,16 +4,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "vercel-build": "echo hello"
+    "start": "node index.js",
+    "build": "echo 'This is a build script'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "vercel": "^35.0.3"
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^6.0.0"
   }
 }
