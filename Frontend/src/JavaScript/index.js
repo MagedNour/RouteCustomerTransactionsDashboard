@@ -2,7 +2,6 @@ let chartInstance = null;
 let nameSorted = false;
 
 
-
 // Init HomePage
 $(document).ready(async function () {
 
@@ -133,7 +132,7 @@ function displayHomePage(transactionsArray, customersArray) {
 
 async function getData() {
   try {
-    let api = await fetch('http://localhost:5500/data', { method: 'GET' });
+    let api = await fetch('http://localhost:3000/api/data', { method: 'GET' });
     let response = await api.json();
     let customersArray = response.customers;
     let transactionsArray = response.transactions;
