@@ -1,14 +1,11 @@
+// api/data.js
 import express from 'express';
-import cors from 'cors'
-
+import cors from 'cors';
 
 const app = express();
-const port = 5500;
-
-app.use(express.static('public'));
 app.use(cors());
 
-app.get('/data', (req, res,next) => {
+app.get('/api/data', (req, res) => {
   const data = {
     "customers": [
       { "id": 1, "name": "Ahmed Ali" },
@@ -59,6 +56,4 @@ app.get('/data', (req, res,next) => {
   res.json(data);
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});
+export default app;
