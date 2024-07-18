@@ -2,4 +2,4 @@ How to run the local server
 
 cd backend  => cd=> api
 
-nodemon to run the server locally
+To run the server locally: node index.js   OR nodemon
