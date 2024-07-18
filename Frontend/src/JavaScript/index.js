@@ -50,6 +50,7 @@ $(document).ready(async function () {
 
   //SortByName ==> adding click
   $("#sortByName").on('click', function () {
+    console.log("Hello");
     if(nameSorted){
       displayTransactions(transactionsArray)
       nameSorted = false
